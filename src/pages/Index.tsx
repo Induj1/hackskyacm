@@ -23,7 +23,7 @@ const Index = () => {
     {
       title: "AI vs AI – Detecting Deepfake & Misinformation",
       description: "Combat AI-generated misinformation and deepfakes used for political manipulation, social engineering, financial scams, and cyber warfare.",
-      prize: "Goodiesbu",
+      prize: "Goodies",
       difficulty: "Intermediate" as const,
       icon: <BookLock size={24} />
     },
@@ -450,7 +450,7 @@ const Index = () => {
   width="100%"
   height="450"
   style={{ border: 0 }}
-  allowFullScreen=""
+  allowFullScreen={true}
   loading="lazy"
   referrerPolicy="no-referrer-when-downgrade"
   className="rounded-md border border-cyber-green/20"
