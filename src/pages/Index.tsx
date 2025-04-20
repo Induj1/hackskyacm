@@ -81,7 +81,7 @@ const Index = () => {
     },
     {
       name: "Dr. Narayana Sabhahit",
-      designation: ", MAHE"
+      designation: "Pro Vice Chancellor, MAHE"
     },
     {
       name: "Prof. (Dr.) Iven Jose",
