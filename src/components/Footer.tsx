@@ -59,6 +59,7 @@ const Footer = () => {
         
         <div className="mt-10 pt-6 border-t border-cyber-green/10 text-center text-gray-500 text-sm">
           <p>© {new Date().getFullYear()} MITB ACM Student Chapter. All rights reserved.</p>
+          
         </div>
       </div>
     </footer>

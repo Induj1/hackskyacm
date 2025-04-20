@@ -158,7 +158,7 @@ const About = () => {
                 <div className="text-center">
                   <div className="h-24 bg-cyber-darker rounded-md flex items-center justify-center border border-cyber-green/20 mb-4">
                     <img 
-                      src="/lovable-uploads/7c59e023-9df8-4cb7-b8b9-5d3e5fd0070b.png" 
+                      src="/lovable-uploads/5a7ed1a5-1689-4027-ac9b-e3c11850900a.png" 
                       alt="Kaspersky" 
                       className="max-h-20 max-w-full p-2" 
                     />

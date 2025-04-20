@@ -100,7 +100,7 @@ const Index = () => {
               <div className="flex justify-center items-center gap-6 mb-8">
                 <div className="flex items-center flex-wrap justify-center gap-4">
                   <img 
-                    src="/lovable-uploads/5a7ed1a5-1689-4027-ac9b-e3c11850900a.png" 
+                    src="/lovable-uploads/manipal.png" 
                     alt="MAHE Logo" 
                     className="h-12 md:h-16"
                   />
@@ -547,9 +547,14 @@ const Index = () => {
 
         {/* Footer */}
         <section className="py-8 bg-cyber-darker">
-          <div className="container mx-auto px-4 text-center">
-            <p className="text-gray-400">© 2025 MITB ACM Chapter. All rights reserved.</p>
-          </div>
+        <div className="mt-4 md:mt-0 flex justify-center items-center">
+  <img 
+    src="/lovable-uploads/mahe.png" 
+    alt="MAHE 2025 Logo" 
+    className="h-24 w-auto object-contain" // Increased height from h-10 to h-24
+  />
+</div>
+
         </section>
       </main>
       <Footer />
