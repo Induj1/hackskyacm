@@ -76,12 +76,12 @@ const Index = () => {
       designation: "Pro Vice Chancellor, MAHE Bengaluru"
     },
     {
-      name: "Dr. Raghavendra Prabhu",
-      designation: "Deputy Registrar, MIT Bengaluru"
+      name: "Prof. (Dr.)Raghavendra Prabhu",
+      designation: "Deputy Registrar, MAHE Bengaluru"
     },
     {
-      name: "Dr. Narayana Sabhahit",
-      designation: "Pro Vice Chancellor,Technology & Sciennces, MAHE"
+      name: "Prof. (Dr.)Narayana Sabhahit",
+      designation: "Pro Vice Chancellor,Technology & Sciences, MAHE"
     },
     {
       name: "Prof. (Dr.) Iven Jose",
@@ -131,7 +131,7 @@ const Index = () => {
                 </h1>
               </div>
               <p className="text-xl text-gray-300 mb-2 max-w-2xl mx-auto">
-                July 22-23, 2025 • Manipal Institute of Technology, Bengaluru
+                July 22-25, 2025 • Manipal Institute of Technology, Bengaluru
               </p>
               <p className="text-xl text-cyber-green font-medium mb-6 max-w-2xl mx-auto italic">
                 "Outsmart cyber adversaries. Disrupt the disruptors."
@@ -314,6 +314,39 @@ const Index = () => {
           </div>
         </section>
 
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4 glow-text">Hackathon Tracks</h2>
+              <p className="text-gray-300 max-w-2xl mx-auto">
+                Choose from three exciting tracks, each focused on a critical area of cybersecurity.
+                Teams can participate in any one track.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {tracks.map((track) => (
+                <TrackCard 
+                  key={track.title}
+                  title={track.title}
+                  description={track.description}
+                  prize={track.prize}
+                  difficulty={track.difficulty}
+                  icon={track.icon}
+                />
+              ))}
+            </div>
+            
+            <div className="mt-12 text-center">
+              <Button variant="outline" className="cyber-border" asChild>
+                <Link to="/register">
+                  Register for a Track
+                </Link>
+              </Button>
+            </div>
+          </div>
+        </section>
+
         {/* Schedule Section */}
         <section className="py-16">
           <div className="container mx-auto px-4">
@@ -328,7 +361,7 @@ const Index = () => {
               <div className="flex items-start gap-4 mb-6">
                 <CalendarDays className="text-cyber-green shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">July 22-23, 2025</h3>
+                  <h3 className="text-xl font-semibold mb-2">July 22-25, 2025</h3>
                   <p className="text-gray-300">Two days of intense innovation and learning</p>
                 </div>
               </div>
@@ -338,7 +371,7 @@ const Index = () => {
                   <AccordionTrigger className="text-left font-medium">Hackathon</AccordionTrigger>
                   <AccordionContent>
                     <p className="text-gray-300">
-                      A 24-hour coding marathon where teams will tackle challenging cybersecurity problems across three tracks. 
+                      A 48-hour coding marathon where teams will tackle challenging cybersecurity problems across three tracks. 
                       Team size: 1-3 members.
                     </p>
                   </AccordionContent>

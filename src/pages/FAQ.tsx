@@ -18,7 +18,7 @@ const FAQ = () => {
     },
     {
       question: "When and where will the hackathon take place?",
-      answer: "The hackathon will take place on July 22-23, 2025 at Manipal Institute of Technology, Bengaluru.",
+      answer: "The hackathon will take place on July 22-25, 2025 at Manipal Institute of Technology, Bengaluru.",
       value: "general-2"
     },
     {
