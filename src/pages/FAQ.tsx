@@ -13,7 +13,7 @@ const FAQ = () => {
   const generalFaqs = [
     {
       question: "What is HackSky?",
-      answer: "HackSky is a 2-day competition organized by Kaspersky Academy in collaboration with MITB ACM Student Chapter. Participants work in teams to develop innovative solutions to real-world cybersecurity challenges.",
+      answer: "HackSky is a 2-day competition organized by Kaspersky in collaboration with MITB ACM Student Chapter. Participants work in teams to develop innovative solutions to real-world cybersecurity challenges.",
       value: "general-1"
     },
     {
@@ -28,7 +28,7 @@ const FAQ = () => {
     },
     {
       question: "Is there a registration fee?",
-      answer: "No, participation in the hackathon is completely free, thanks to our sponsors.",
+      answer: "No, participation in the hackathon is completely free, thanks to our hosts Department of IT, MIT Bengaluru, Manipal Academy Of Higher Education, MITB ACM Student Chapter.",
       value: "general-4"
     }
   ];
@@ -94,18 +94,12 @@ const FAQ = () => {
       value: "prize-1"
     },
     {
-      question: "Are there any additional opportunities for participants?",
-      answer: "Yes, Kaspersky may offer additional opportunities to selected participants based on their performance during the hackathon.",
-      value: "prize-2"
-    },
-    {
       question: "Will all participants receive certificates?",
       answer: "Yes, all participants who submit a project will receive a digital certificate of participation. Winners will receive special certificates acknowledging their achievement.",
       value: "prize-3"
     }
   ];
 
-  // Filter FAQs based on search query
   const filterFaqs = (faqs) => {
     if (!searchQuery) return faqs;
     return faqs.filter(faq => 

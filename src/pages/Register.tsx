@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -27,8 +26,9 @@ import {
 } from '@/components/ui/select';
 import { Checkbox } from '@/components/ui/checkbox';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { HackathonRulesDialog } from '@/components/HackathonRulesDialog';
+import { CodeOfConductDialog } from '@/components/CodeOfConductDialog';
 
-// Update the schema for team registration
 const teamFormSchema = z.object({
   teamName: z.string().min(2, { message: 'Team name must be at least 2 characters.' }),
   teamSize: z.string({ required_error: 'Please select team size.' }),
@@ -42,6 +42,10 @@ const teamFormSchema = z.object({
   termsAccepted: z.boolean()
     .refine(val => val === true, {
       message: 'You must accept the terms and conditions.',
+    }),
+  dataConsent: z.boolean()
+    .refine(val => val === true, {
+      message: 'You must consent to data sharing to participate.',
     }),
 });
 
@@ -61,6 +65,7 @@ const Register = () => {
       teamMembers: '',
       projectIdea: '',
       termsAccepted: false,
+      dataConsent: false,
     },
   });
 
@@ -282,7 +287,31 @@ const Register = () => {
                               I accept the terms and conditions
                             </FormLabel>
                             <FormDescription>
-                              By registering, you agree to the <a href="#" className="text-cyber-green hover:underline">hackathon rules</a> and <a href="#" className="text-cyber-green hover:underline">code of conduct</a>.
+                              By registering, you agree to the <HackathonRulesDialog /> and <CodeOfConductDialog />.
+                            </FormDescription>
+                          </div>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    
+                    <FormField
+                      control={teamForm.control}
+                      name="dataConsent"
+                      render={({ field }) => (
+                        <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md p-4 bg-cyber-gray/20">
+                          <FormControl>
+                            <Checkbox
+                              checked={field.value}
+                              onCheckedChange={field.onChange}
+                            />
+                          </FormControl>
+                          <div className="space-y-1 leading-none">
+                            <FormLabel>
+                              Data Sharing Consent
+                            </FormLabel>
+                            <FormDescription>
+                              I consent to share my registration data with Kaspersky, its affiliates, and partners for event-related communications and future opportunities.
                             </FormDescription>
                           </div>
                           <FormMessage />

@@ -81,7 +81,7 @@ const Index = () => {
     },
     {
       name: "Dr. Narayana Sabhahit",
-      designation: "Registrar, MAHE"
+      designation: ", MAHE"
     },
     {
       name: "Prof. (Dr.) Iven Jose",
@@ -100,7 +100,7 @@ const Index = () => {
               <div className="flex justify-center items-center gap-6 mb-8">
                 <div className="flex items-center flex-wrap justify-center gap-4">
                   <img 
-                    src="/lovable-uploads/7c59e023-9df8-4cb7-b8b9-5d3e5fd0070b.png" 
+                    src="/lovable-uploads/MAHe.png" 
                     alt="MAHE Logo" 
                     className="h-12 md:h-16"
                   />

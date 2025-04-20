@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -159,13 +158,17 @@ const About = () => {
                 <div className="text-center">
                   <div className="h-24 bg-cyber-darker rounded-md flex items-center justify-center border border-cyber-green/20 mb-4">
                     <img 
-                      src="/lovable-uploads/5a7ed1a5-1689-4027-ac9b-e3c11850900a.png" 
+                      src="/lovable-uploads/7c59e023-9df8-4cb7-b8b9-5d3e5fd0070b.png" 
                       alt="Kaspersky" 
                       className="max-h-20 max-w-full p-2" 
                     />
                   </div>
                   <p className="text-gray-400">
-                    A global cybersecurity company providing leading-edge security solutions.
+                    Kaspersky, a global cybersecurity leader with over 25 years of experience, 
+                    protects over 400 million users worldwide. Known for innovative security 
+                    solutions and groundbreaking research in threat detection, Kaspersky 
+                    is committed to fostering the next generation of cybersecurity experts 
+                    through educational initiatives and industry partnerships.
                   </p>
                 </div>
                 
@@ -178,7 +181,12 @@ const About = () => {
                     />
                   </div>
                   <p className="text-gray-400">
-                    The student chapter dedicated to advancing computing as a science and profession.
+                    MITB ACM Student Chapter, part of the world's largest computing society, 
+                    is a vibrant community at Manipal Institute of Technology, Bengaluru. 
+                    Focused on advancing computing as a science and profession, the chapter 
+                    regularly organizes technical workshops, hackathons, and industry 
+                    collaborations to bridge the gap between academic learning and 
+                    industry requirements.
                   </p>
                 </div>
               </div>
