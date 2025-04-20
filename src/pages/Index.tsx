@@ -61,31 +61,31 @@ const Index = () => {
     },
     {
       name: "Dr. Ranjan R Pai",
-      designation: "Chairman, MEMG"
+      designation: "President, MAHE"
     },
     {
       name: "Dr. H.S. Ballal",
-      designation: "Pro-Chancellor, MAHE"
+      designation: "Pro Chancellor, MAHE"
     },
     {
       name: "Lt. Gen. (Dr.) M.D. Venkatesh",
-      designation: "Vice-Chancellor, MAHE"
+      designation: "Vice Chancellor, MAHE"
     },
     {
       name: "Prof. (Dr.) M. Veeraraghavan",
-      designation: "Pro Vice-Chancellor, MAHE Bengaluru"
+      designation: "Pro Vice Chancellor, MAHE Bengaluru"
     },
     {
       name: "Dr. Raghavendra Prabhu",
-      designation: "Director, MIT Bengaluru"
+      designation: "Deputy Registrar, MIT Bengaluru"
     },
     {
       name: "Dr. Narayana Sabhahit",
-      designation: "Pro Vice Chancellor, MAHE"
+      designation: "Pro Vice Chancellor,Technology & Sciennces, MAHE"
     },
     {
       name: "Prof. (Dr.) Iven Jose",
-      designation: "Joint Director, MIT Bengaluru"
+      designation: "Director, MIT, MAHE Bengaluru"
     }
   ];
 
@@ -100,7 +100,7 @@ const Index = () => {
               <div className="flex justify-center items-center gap-6 mb-8">
                 <div className="flex items-center flex-wrap justify-center gap-4">
                   <img 
-                    src="/lovable-uploads/MAHe.png" 
+                    src="/lovable-uploads/5a7ed1a5-1689-4027-ac9b-e3c11850900a.png" 
                     alt="MAHE Logo" 
                     className="h-12 md:h-16"
                   />
