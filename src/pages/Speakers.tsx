@@ -23,20 +23,6 @@ const Speakers = () => {
                   Speakers and judges will be revealed soon. Stay tuned for updates!
                 </p>
               </div>
-              
-              <div className="bg-cyber-darker border border-cyber-green/20 rounded-md p-8">
-                <h3 className="text-xl font-bold mb-4">Become a Speaker or Judge</h3>
-                <p className="text-gray-300 mb-4">
-                  Are you an expert in cybersecurity or related fields? We're always looking 
-                  for knowledgeable professionals to join our speaker lineup or judging panel.
-                </p>
-                <div className="flex items-center gap-2 text-gray-300">
-                  <Mail className="text-cyber-green" size={20} />
-                  <a href="mailto:acm.mitblr@manipal.edu" className="text-cyber-green hover:underline">
-                    acm.mitblr@manipal.edu
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </section>

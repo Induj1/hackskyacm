@@ -115,7 +115,7 @@ const Index = () => {
                     <img 
                       src="/lovable-uploads/5a7ed1a5-1689-4027-ac9b-e3c11850900a.png" 
                       alt="Kaspersky Logo" 
-                      className="h-6 md:h-8"
+                      className="h-10 md:h-14"
                     />
                   </div>
                 </div>

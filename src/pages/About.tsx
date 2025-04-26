@@ -62,16 +62,7 @@ const About = () => {
                       <p className="text-gray-400">1-3 members per team</p>
                     </div>
                   </div>
-                  
-                  <div className="flex items-start gap-4">
-                    <div className="p-2 bg-cyber-green/10 rounded-md text-cyber-green mt-1">
-                      <LucideWand2 size={20} />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-bold text-white">Format</h3>
-                      <p className="text-gray-400">Online with live streaming</p>
-                    </div>
-                  </div>
+                
                 </div>
               </div>
             </div>

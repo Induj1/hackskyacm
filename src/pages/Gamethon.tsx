@@ -29,7 +29,7 @@ const Gamethon = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-cyber-green mb-2">Details:</h3>
                     <ul className="list-disc list-inside text-gray-300 space-y-2">
-                      <li>Date: July 25th, 2025</li>
+                      <li>Date: July 31st, 2025</li>
                       <li>Platform: KIPS</li>
                       <li>Format: Offline Competition</li>
                       <li>Prizes: Exciting Goodies for Winners</li>
