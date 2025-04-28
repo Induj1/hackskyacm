@@ -10,7 +10,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 
 const Index = () => {
-  const targetDate = new Date('July 22, 2025');
+  const targetDate = new Date('July 29, 2025');
 
   const tracks = [
     {
@@ -131,7 +131,7 @@ const Index = () => {
                 </h1>
               </div>
               <p className="text-xl text-gray-300 mb-2 max-w-2xl mx-auto">
-                July 22-25, 2025 • Manipal Institute of Technology, Bengaluru
+                July 29-30, 2025 • Manipal Institute of Technology, Bengaluru
               </p>
               <p className="text-xl text-cyber-green font-medium mb-6 max-w-2xl mx-auto italic">
                 "Outsmart cyber adversaries. Disrupt the disruptors."
@@ -361,7 +361,7 @@ const Index = () => {
               <div className="flex items-start gap-4 mb-6">
                 <CalendarDays className="text-cyber-green shrink-0 mt-1" />
                 <div>
-                  <h3 className="text-xl font-semibold mb-2">July 22-25, 2025</h3>
+                  <h3 className="text-xl font-semibold mb-2">July 29-30, 2025</h3>
                   <p className="text-gray-300">Two days of intense innovation and learning</p>
                 </div>
               </div>
@@ -402,33 +402,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Speakers Section */}
-        <section className="py-16 bg-cyber-gray/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4 glow-text">Speakers & Judges</h2>
-              <p className="text-gray-300 max-w-2xl mx-auto">
-                Will be revealed soon
-              </p>
-            </div>
-            
-            <div className="max-w-md mx-auto bg-cyber-darker border border-cyber-green/20 rounded-md p-6">
-              <div className="flex flex-col items-center text-center">
-                <p className="text-xl text-cyber-green">Other speakers will be announced soon</p>
-              </div>
-              
-              <div className="mt-6 text-center">
-                <p className="text-gray-300">
-                  Interested in being a speaker? Contact us at:
-                  <br />
-                  <a href="mailto:acm.mitblr@manipal.edu" className="text-cyber-green">
-                    acm.mitblr@manipal.edu
-                  </a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+      
 
         {/* Registration Section */}
         <section className="py-16">

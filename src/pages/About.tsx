@@ -39,7 +39,7 @@ const About = () => {
                     </div>
                     <div>
                       <h3 className="text-lg font-bold text-white">When</h3>
-                      <p className="text-gray-400">July 22-25, 2025</p>
+                      <p className="text-gray-400">July 29-30, 2025</p>
                     </div>
                   </div>
                   
