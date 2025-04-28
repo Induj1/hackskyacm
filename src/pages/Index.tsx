@@ -556,7 +556,7 @@ const Index = () => {
         <section className="py-8 bg-cyber-darker">
         <div className="mt-4 md:mt-0 flex justify-center items-center">
   <img 
-    src="/lovable-uploads/mahe.png" 
+    src="/lovable-uploads/mahe2025.png" 
     alt="MAHE 2025 Logo" 
     className="h-24 w-auto object-contain" // Increased height from h-10 to h-24
   />
