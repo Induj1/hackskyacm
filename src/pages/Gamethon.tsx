@@ -10,7 +10,7 @@ const Gamethon = () => {
       <main className="min-h-screen binary-bg pt-20">
         <div className="container mx-auto px-4 py-16">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold mb-4 glow-text">Gamethon</h1>
+            <h1 className="text-4xl font-bold mb-4 glow-text">Kaspersky Interactive Protection Simulation (KIPS)</h1>
             <p className="text-xl text-gray-300 mb-2">
               An exciting hybrid gaming competition
             </p>
@@ -38,13 +38,7 @@ const Gamethon = () => {
                   </p>
                 </div>
 
-                <div className="space-y-6 mt-10 pt-6 border-t border-cyber-green/10">
-                  <div className="flex items-center gap-3 border-l-2 border-cyber-green/50 pl-4">
-                    <User className="text-cyber-green" size={18} />
-                    <p className="text-gray-300">
-                      <span className="font-semibold text-cyber-blue">Lead Trainer:</span> Trishia Octaviano, Cybersecurity Education Manager for Asia-Pacific, Kaspersky
-                    </p>
-                  </div>
+               
                   
                   <p className="text-gray-300">
                     KIPS is a strategic business simulation, a team game that demonstrates the connection between business efficiency and cybersecurity. 
@@ -68,6 +62,14 @@ const Gamethon = () => {
                     data and make strategic decisions based on uncertain information and limited resources. If that sounds realistic, it should do, 
                     because each of the scenarios is based on real-life events.
                   </p>
+
+                  <div className="space-y-6 mt-10 pt-6 border-t border-cyber-green/10">
+                  <div className="flex items-center gap-3 border-l-2 border-cyber-green/50 pl-4">
+                    <User className="text-cyber-green" size={18} />
+                    <p className="text-gray-300">
+                      <span className="font-semibold text-cyber-blue">Lead Trainer:</span> Trishia Octaviano, Cybersecurity Education Manager for Asia-Pacific, Kaspersky
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
