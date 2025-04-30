@@ -28,18 +28,14 @@ const Gamethon = () => {
                 <div className="mt-8">
                   <h3 className="text-lg font-semibold text-cyber-green mb-2">Details:</h3>
                   <ul className="list-disc list-inside text-gray-300 space-y-2 ml-4">
-                    <li>Date: July 25th, 2025</li>
+                    <li>Date: July 31st, 2025</li>
                     <li>Platform: KIPS</li>
                     <li>Format: Hybrid Competition</li>
                     <li>Prizes: Exciting Goodies for Winners</li>
                   </ul>
-                  <p className="text-gray-400 mt-6">
-                    Registration details will be shared soon. Stay tuned!
-                  </p>
                 </div>
 
-               
-                  
+                <div className="space-y-6 mt-10 pt-6 border-t border-cyber-green/10">
                   <p className="text-gray-300">
                     KIPS is a strategic business simulation, a team game that demonstrates the connection between business efficiency and cybersecurity. 
                     Game-based learning helps to engage decision-makers in cybersecurity and motivate them to take further steps in building 
@@ -62,14 +58,17 @@ const Gamethon = () => {
                     data and make strategic decisions based on uncertain information and limited resources. If that sounds realistic, it should do, 
                     because each of the scenarios is based on real-life events.
                   </p>
-
-                  <div className="space-y-6 mt-10 pt-6 border-t border-cyber-green/10">
-                  <div className="flex items-center gap-3 border-l-2 border-cyber-green/50 pl-4">
+                  
+                  <div className="flex items-center gap-3 border-l-2 border-cyber-green/50 pl-4 mt-8">
                     <User className="text-cyber-green" size={18} />
                     <p className="text-gray-300">
                       <span className="font-semibold text-cyber-blue">Lead Trainer:</span> Trishia Octaviano, Cybersecurity Education Manager for Asia-Pacific, Kaspersky
                     </p>
                   </div>
+                  
+                  <p className="text-gray-400 mt-4">
+                    Registration details will be shared soon. Stay tuned!
+                  </p>
                 </div>
               </div>
             </div>
