@@ -11,8 +11,11 @@ const Gamethon = () => {
         <div className="container mx-auto px-4 py-16">
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-4 glow-text">Gamethon</h1>
-            <p className="text-xl text-gray-300 mb-8">
+            <p className="text-xl text-gray-300 mb-2">
               An exciting hybrid gaming competition
+            </p>
+            <p className="text-lg text-cyber-green">
+              Powered by: Kaspersky Academy
             </p>
           </div>
 
