@@ -23,13 +23,18 @@ const FAQ = () => {
     },
     {
       question: "Who can participate in the hackathon?",
-      answer: "The hackathon is open to students, professionals, and cybersecurity enthusiasts. Participants must be at least 18 years old or have guardian permission if younger.",
+      answer: "The hackathon is open to all residents of India aged 16-25 years who are enrolled at academic institutions in India. Note that employees of the Organisers or their affiliated companies, and their immediate families are not eligible to participate.",
       value: "general-3"
     },
     {
       question: "Is there a registration fee?",
       answer: "No, participation in the hackathon is completely free, thanks to our hosts Department of IT, MIT Bengaluru, Manipal Academy Of Higher Education, MITB ACM Student Chapter.",
       value: "general-4"
+    },
+    {
+      question: "Do these rules apply to both the Hackathon and the KIPS competition?",
+      answer: "No, these Rules and Regulations apply to the Hackathon only, and not to the KIPS competition scheduled on July 31st, 2025.",
+      value: "general-5"
     }
   ];
 
@@ -41,13 +46,18 @@ const FAQ = () => {
     },
     {
       question: "Can I participate individually?",
-      answer: "Yes, you can register as an individual. We'll try to match you with other individual participants to form a team if you choose that option during registration.",
+      answer: "Yes, you can register as an individual. The competition is open to individual or team submissions.",
       value: "team-2"
     },
     {
-      question: "Can team members be from different institutions?",
-      answer: "Absolutely! Teams can include members from different institutions, companies, or countries.",
+      question: "What is the registration deadline?",
+      answer: "The registration deadline is July 5, 2025. Make sure to complete your registration before this date.",
       value: "team-3"
+    },
+    {
+      question: "Can team members be from different institutions?",
+      answer: "Yes, team members can be from different institutions, as long as all members are enrolled at academic institutions in India and meet the eligibility criteria.",
+      value: "team-4"
     }
   ];
 
@@ -72,17 +82,17 @@ const FAQ = () => {
   const submissionFaqs = [
     {
       question: "What are the evaluation criteria?",
-      answer: "Projects will be evaluated based on innovation, technical implementation, practicality, presentation, and relevance to the chosen track. The detailed judging criteria will be shared during the kickoff.",
+      answer: "Projects will be evaluated based on: 1) Accordance with the track, 2) Unique selling proposition (USP), 3) Technical feasibility, 4) Proof of concept (PoC), 5) Level of security and patentability, and 6) Scalability and deployment readiness.",
       value: "submission-1"
     },
     {
       question: "What should be included in the final submission?",
-      answer: "Your final submission should include the source code, a brief presentation (5 slides max), a demo video (3 minutes max), and documentation explaining your solution and how to run it.",
+      answer: "Your final submission should include the source code, a brief presentation, and all documentation explaining your solution. Submissions must be in English and should not contain any third-party intellectual property without proper authorization.",
       value: "submission-2"
     },
     {
       question: "Do we retain the intellectual property rights to our project?",
-      answer: "Yes, teams retain the intellectual property rights to their projects. However, by participating, you grant Kaspersky the right to showcase your project for promotional purposes.",
+      answer: "By participating, you grant the Organisers the right to use your portraits, written statements, photos, audio and visual recordings for commercial, marketing and promotional purposes related to the Competition. Please review the full Terms & Conditions for complete details on intellectual property rights.",
       value: "submission-3"
     }
   ];
@@ -90,7 +100,7 @@ const FAQ = () => {
   const prizeFaqs = [
     {
       question: "What are the prizes for winning teams?",
-      answer: "First prize winner will receive Kaspersky xTraining Courses worth up to $2,500 and cash prizes. Specific prize amounts will be announced soon.",
+      answer: "The First Prize winner will receive 1 lakh rupees (approximately $1,200 USD) and access to a select X-training course offered by Kaspersky. Note that only one team/individual will be selected as the First Prize winner.",
       value: "prize-1"
     },
     {
@@ -108,6 +118,8 @@ const FAQ = () => {
     );
   };
 
+  // ... keep existing code (filterFaqs functions and other variables)
+
   const filteredGeneralFaqs = filterFaqs(generalFaqs);
   const filteredTeamFaqs = filterFaqs(teamFaqs);
   const filteredTechnicalFaqs = filterFaqs(technicalFaqs);
@@ -124,6 +136,8 @@ const FAQ = () => {
     filteredTechnicalFaqs.length > 0 || 
     filteredSubmissionFaqs.length > 0 || 
     filteredPrizeFaqs.length > 0;
+
+  // ... keep existing code (render methods)
 
   return (
     <>
@@ -162,6 +176,7 @@ const FAQ = () => {
               )}
               
               <div className="space-y-8">
+                {/* ... keep existing code (accordion sections) */}
                 {filteredGeneralFaqs.length > 0 && (
                   <div>
                     <h2 className="text-2xl font-bold mb-4 text-cyber-green">General Questions</h2>
@@ -249,7 +264,7 @@ const FAQ = () => {
                   If you couldn't find the information you're looking for, please don't hesitate to contact us.
                 </p>
                 <Button asChild>
-                  <a href="mailto:hackathon@kaspersky.com">Contact Us</a>
+                  <a href="mailto:academy@kaspersky.com,acm.mitblr@manipal.edu">Contact Us</a>
                 </Button>
               </div>
             </div>
