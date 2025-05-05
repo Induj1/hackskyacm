@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import FAQItem from '@/components/FAQItem';
+import { HackathonRulesDialog } from '@/components/HackathonRulesDialog';
 import { Accordion } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Search } from 'lucide-react';
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 
 const FAQ = () => {
   const [searchQuery, setSearchQuery] = useState('');
+  const [isRulesOpen, setIsRulesOpen] = useState(false);
 
   const generalFaqs = [
     {
@@ -110,6 +113,35 @@ const FAQ = () => {
     }
   ];
 
+  const rulesFaqs = [
+    {
+      question: "What are the official rules for the hackathon?",
+      answer: "The official rules for HackSky cover eligibility, competition format, registration, submission requirements, selection criteria, and more. You can read the complete hackathon rules by clicking here: [RULES_LINK]",
+      value: "rules-1",
+      hasRulesLink: true
+    },
+    {
+      question: "Do these rules apply to both the Hackathon and the KIPS competition?",
+      answer: "No, these Rules and Regulations apply to the Hackathon only (July 29-30, 2025), and not to the KIPS competition scheduled on July 31st, 2025.",
+      value: "rules-2"
+    },
+    {
+      question: "Who is eligible to participate?",
+      answer: "This competition is open to all residents of India aged 16-25 years who are enrolled at academic institutions in India. Employees of the Organisers or their affiliated companies, and their immediate families are not eligible to participate.",
+      value: "rules-3"
+    },
+    {
+      question: "What are the submission requirements?",
+      answer: "Entries must be original, in English, created during the hackathon, and must address one of the specified hackathon tracks. They must not contain any inappropriate, offensive, or third-party content. For complete details, please refer to the hackathon rules.",
+      value: "rules-4"
+    },
+    {
+      question: "What are the judging criteria?",
+      answer: "Projects will be evaluated based on six criteria: 1) Accordance with the track, 2) Unique selling proposition (USP), 3) Technical feasibility, 4) Proof of concept (PoC), 5) Level of security and patentability, and 6) Scalability and deployment readiness.",
+      value: "rules-5"
+    }
+  ];
+
   const filterFaqs = (faqs) => {
     if (!searchQuery) return faqs;
     return faqs.filter(faq => 
@@ -118,13 +150,12 @@ const FAQ = () => {
     );
   };
 
-  // ... keep existing code (filterFaqs functions and other variables)
-
   const filteredGeneralFaqs = filterFaqs(generalFaqs);
   const filteredTeamFaqs = filterFaqs(teamFaqs);
   const filteredTechnicalFaqs = filterFaqs(technicalFaqs);
   const filteredSubmissionFaqs = filterFaqs(submissionFaqs);
   const filteredPrizeFaqs = filterFaqs(prizeFaqs);
+  const filteredRulesFaqs = filterFaqs(rulesFaqs);
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
@@ -135,9 +166,8 @@ const FAQ = () => {
     filteredTeamFaqs.length > 0 || 
     filteredTechnicalFaqs.length > 0 || 
     filteredSubmissionFaqs.length > 0 || 
-    filteredPrizeFaqs.length > 0;
-
-  // ... keep existing code (render methods)
+    filteredPrizeFaqs.length > 0 ||
+    filteredRulesFaqs.length > 0;
 
   return (
     <>
@@ -176,7 +206,6 @@ const FAQ = () => {
               )}
               
               <div className="space-y-8">
-                {/* ... keep existing code (accordion sections) */}
                 {filteredGeneralFaqs.length > 0 && (
                   <div>
                     <h2 className="text-2xl font-bold mb-4 text-cyber-green">General Questions</h2>
@@ -187,6 +216,23 @@ const FAQ = () => {
                           question={faq.question}
                           answer={faq.answer}
                           value={faq.value}
+                        />
+                      ))}
+                    </Accordion>
+                  </div>
+                )}
+                
+                {filteredRulesFaqs.length > 0 && (
+                  <div>
+                    <h2 className="text-2xl font-bold mb-4 text-cyber-green">Rules & Regulations</h2>
+                    <Accordion type="single" collapsible className="border border-cyber-green/20 rounded-md overflow-hidden">
+                      {filteredRulesFaqs.map((faq) => (
+                        <FAQItem 
+                          key={faq.value}
+                          question={faq.question}
+                          answer={faq.answer}
+                          value={faq.value}
+                          hasRulesLink={faq.hasRulesLink}
                         />
                       ))}
                     </Accordion>
