@@ -417,7 +417,6 @@ const Index = () => {
             <div className="max-w-3xl mx-auto bg-cyber-darker border border-cyber-green/20 rounded-md p-6">
               <div className="text-center mb-6">
                 <h3 className="text-xl font-semibold mb-4">Important Notes</h3>
-                <p className="text-gray-300">• Top 100 teams will be shortlisted based on online rounds</p>
                 <p className="text-gray-300">• Team size: 1-3 members</p>
                 <p className="text-gray-300">• Registration is completely free</p>
                 <p className="text-gray-300">• Data will be shared with Kaspersky and its partners</p>
