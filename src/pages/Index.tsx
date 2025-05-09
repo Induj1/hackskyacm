@@ -37,9 +37,20 @@ const Index = () => {
   ];
 
   const organizers = [
+  
+    {
+      name: "Dr. Gururaj H L",
+      role: "Faculty Sponsor, MITB ACM Student Chapter",
+      position: "middle"
+    },
+    {
+      name: "Dr. Shreyas J",
+      role: "Faculty Sponsor, MITB ACM Student Chapter",
+      position: "middle"
+    },
     {
       name: "Prof. (Dr.) Dayananda P",
-      role: "HoD, IT, MIT Bengaluru",
+      role: "Dean, School of Computer Science & Engineering MIT Bengaluru",
       position: "middle"
     },
     {
@@ -53,6 +64,7 @@ const Index = () => {
       position: "right"
     }
   ];
+  
 
   const patrons = [
     {
@@ -513,7 +525,7 @@ const Index = () => {
         <section className="py-16 bg-cyber-gray/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4 glow-text">Organizers & Sponsors</h2>
+              <h2 className="text-3xl font-bold mb-4 glow-text">Organizers</h2>
             </div>
             
             <div className="max-w-3xl mx-auto">
