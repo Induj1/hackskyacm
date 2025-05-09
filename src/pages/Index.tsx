@@ -223,9 +223,9 @@ const Index = () => {
                     </p>
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold mb-2">Department of Information Technology</h3>
+                    <h3 className="text-lg font-semibold mb-2">School of Engineering</h3>
                     <p className="text-gray-300 mb-4">
-                      The Department of Information Technology at MIT Bengaluru is dedicated to fostering
+                      The School of Engineering at MIT Bengaluru is dedicated to fostering
                       innovation and excellence in computing, cybersecurity, and emerging technologies.
                       With cutting-edge labs and industry collaborations, the department empowers students
                       to solve real-world challenges. The curriculum is designed to be dynamic and industry-
