@@ -62,6 +62,11 @@ const Index = () => {
       name: "Mr. Nishanth Shet",
       role: "Vice Chair, MITB ACM",
       position: "right"
+    },
+       {
+      name: "Mr. Sashi Pritam",
+      role: "Secretary, MITB ACM",
+      position: "right"
     }
   ];
   
@@ -135,6 +140,8 @@ const Index = () => {
               
               <div className="mb-4">
                 <p className="text-cyber-green font-medium">Organized by: MITB ACM Student Chapter</p>
+                <p className="text-cyber-green font-medium">&</p>
+                        <p className="text-cyber-green font-medium">School of Computer Science & Engineering, MIT, MAHE Bengaluru</p>
               </div>
               
               <div className="inline-block mx-auto">
